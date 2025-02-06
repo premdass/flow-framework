@@ -41,6 +41,11 @@ public class ApiSpecFetcher {
     }
 
     /**
+     * Adding private no arg constructor to prevent instantiation
+     */
+    private ApiSpecFetcher() {}
+
+    /**
      * Parses the OpenAPI specification directly from the URI.
      *
      * @param apiSpecUri URI to the API specification (can be file path or web URI).

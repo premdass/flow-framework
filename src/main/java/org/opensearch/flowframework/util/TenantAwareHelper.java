@@ -24,6 +24,11 @@ import java.util.Objects;
 public class TenantAwareHelper {
 
     /**
+     * Adding private no arg constructor to prevent instantiation
+     */
+    private TenantAwareHelper() {}
+
+    /**
      * Validates the tenant ID based on the multi-tenancy feature setting.
      *
      * @param isMultiTenancyEnabled whether the multi-tenancy feature is enabled.

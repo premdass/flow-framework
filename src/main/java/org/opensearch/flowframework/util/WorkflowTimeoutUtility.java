@@ -35,6 +35,11 @@ public class WorkflowTimeoutUtility {
     private static final Logger logger = LogManager.getLogger(WorkflowTimeoutUtility.class);
 
     /**
+     * Adding private no arg constructor to prevent instantiation
+     */
+    private WorkflowTimeoutUtility() {}
+
+    /**
      * Schedules a timeout task for a workflow execution.
      *
      * @param client        The OpenSearch client used to interact with the cluster.
